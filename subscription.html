@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #closecartbutton{
+                background-color:red; 
+                }
+            #cart{display:none;width:400px;height:800px;background-color:white;border:1px solid black;float:left;}
+            #colorkeyword{
+                background-color:darkblue;
+                padding:10px;
+            height:600px;}
+            #colorkeyword2{
+                background-color:orange;
+                padding:10px;
+       }
+            
+            h2{color:white;}
+            p{color:white;}
+                
+        </style>
+        <title>game reviews</title>
+
+    </head>
+    <body>
+        <div id="colorkeyword2">
+        <nav><input type="button" value="cart" onclick="openclosecart()"><a href="index.html">Home</a> <a href="updates.html">update</a> <a href="subscription.html">followers</a> </nav>
+        <div id="cart">
+            <input type="button" id="closecartbutton" value="X" onclick="openclosecart()">
+        </div>
+        <h1>before you view this webpage...</h1>
+            </div>
+        <div id="colorkeyword">
+    
+ <p>Please enter the password.</p>
+ <p>Password:<input id="passwordBox" type="password"/></p>
+            <p>dont have an account sign up</p><a href="sign up.html">here</a>
+       </div>
+        <script>
+                function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "@gamer.org") {
+    return true;
+   }
+   alert("Access denied! Incorrect password!");
+   return false;
+   }
+ </script>
+    </body>
+</html>
